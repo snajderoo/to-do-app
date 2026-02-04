@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app"> 
+<h1>TODO App</h1>
+
+<form id="todo-form">
+    <label>
+        Tytuł*
+        <input type="text" id="title">
+    </label>
+
+    <label>
+        Opis
+        <textarea id="description"></textarea>
+    </label>
+
+    <div id="error" class="error"></div>
+
+    <button type="submit">Dodaj zadanie</button>
+</form>
+
+<ul id="todo-list"></ul>
+
+<dialog id="details-dialog">
+    <h3 id="details-title"></h3>
+    <p id="details-description"></p>
+    <p id="details-date"></p>
+    <p id="details-status"></p>
+    <button id="close-dialog">Zamknij</button>
+</dialog>
+
+<script src="js/data.js"></script>
+<script src="js/validators.js"></script>
+<script src="js/app.js"></script>
+
+</div>
+</body>
+</html>
